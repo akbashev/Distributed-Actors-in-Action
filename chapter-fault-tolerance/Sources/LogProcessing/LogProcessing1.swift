@@ -2,17 +2,16 @@ import FoundationEssentials
 
 enum DbStrategy1 {
   
-  static func main() async throws {
-//    let sources = [
-//      "file:///source1/",
-//      "file:///source2/"
-//    ]
-//    let databaseUrl = "http://mydatabase1"
-//    let logProcessing = LogProcessingSupervisor(
-//      sources: sources,
-//      databaseUrl: databaseUrl
-//    )
-//    try await system.terminated
+  static func main() {
+    let sources = [
+      "file:///source1/",
+      "file:///source2/"
+    ]
+    let databaseUrl = "http://mydatabase1"
+    let logProcessing = LogProcessingSupervisor(
+      sources: sources,
+      databaseUrl: databaseUrl
+    )
   }
   
   actor LogProcessingSupervisor {
