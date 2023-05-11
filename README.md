@@ -36,7 +36,7 @@ For quite some time afterwards there was just no need for distrubuted computatio
 
 At the time, Ericsson was developing a new generation of telecommunications switches that needed to be highly reliable and able to handle large amounts of traffic. Armstrong and his colleagues realized that existing programming languages were not well-suited to the task of building such a system. They needed a language that could handle concurrency, fault tolerance, and distributed computing, among other requirements. To address these challenges, Armstrong developed Erlang as a new programming language.
 
-Erlang's design was heavily influenced by Armstrong's experience working with Prolog and Lisp, as well as his interest in the actor model of computation. The language quickly gained popularity within Ericsson and later in the wider programming community, particularly for its ability to handle large-scale telecommunications systems with high reliability and fault tolerance.
+Erlang's design was heavily influenced by Armstrong's experience working with Prolog and Lisp, as well as his interest in the actor model of computation, although he was not aware of it at the begginig, so basically they've reinvented it. The language quickly gained popularity within Ericsson and later in the wider programming community, particularly for its ability to handle large-scale telecommunications systems with high reliability and fault tolerance.
 
 Still though Erlang stayed mostly niche language for Ericsson throughout 90s.
 
