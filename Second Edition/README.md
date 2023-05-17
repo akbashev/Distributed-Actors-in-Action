@@ -10,6 +10,6 @@ I'm going by MEAP version of the book, so it's not 100% complete and seems like 
 * chapter02—done
 * chapter03-done
 * chapter04-skipped, will add tests to all examples a bit later
-* chapter05-see (README)[https://github.com/akbashev/Distributed-Actors-in-Action/blob/main/Second%20Edition/chapter05/README.md]
+* chapter05-see [README](https://github.com/akbashev/Distributed-Actors-in-Action/blob/main/Second%20Edition/chapter05/README.md)
 * chapter06-in progress
 ...
