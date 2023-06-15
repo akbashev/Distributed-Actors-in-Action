@@ -3,7 +3,7 @@ import DistributedCluster
 typealias DefaultDistributedActorSystem = ClusterSystem
 
 @main
-public struct GoTicks {  
+public struct App {
   public static func main() async throws {
     let clusterSystem = await ClusterSystem(settings: .default)
     let hotelConcierge = HotelConcierge(actorSystem: clusterSystem)
@@ -12,8 +12,10 @@ public struct GoTicks {
     let mrY = VIPGuest(actorSystem: clusterSystem, name: "Mr.Y")
     try await mrX.enterHotel()
     try await mrY.enterHotel()
-    print("Found guest: \(try await hotelConcierge.findGuest(with: "Mr.X"))")
-    print("Press anything to terminate:")
+    if let guest = try await hotelConcierge.findGuest(with: "Mr.X") {
+      clusterSystem.log.debug("Found guest: \(guest)")
+    }
+    clusterSystem.log.debug("Press anything to terminate:")
     _ = readLine()
   }
 }
