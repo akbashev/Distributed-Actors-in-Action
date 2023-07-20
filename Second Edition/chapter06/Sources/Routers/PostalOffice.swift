@@ -20,6 +20,15 @@ distributed actor PostalOffice: DistributedWorker {
   enum Result: Codable {
     case done
     case error(String)
+    
+    var value: String {
+      switch self {
+        case .done:
+          return "Done"
+        case .error(let string):
+          return string
+      }
+    }
   }
   
   distributed func submit(work: Message) async throws -> Result {
